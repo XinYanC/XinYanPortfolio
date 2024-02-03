@@ -11672,6 +11672,40 @@ pre .code {
   padding-right: 10%;
 }
 
+.contact-social {
+  padding: 7% 0%;
+  list-style-type: none;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+  justify-content: center !important;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.contact-social hr {
+  border-color: white;
+}
+
+.contact-social-box {
+  display: flex;
+  justify-content: space-between;
+}
+
+.contact-social-link {
+  display: flex;
+  justify-content: center !important;
+  /* align-items: center !important; */
+}
+
+.contact-social-icon {
+  padding-right: 10%;
+}
+
 @media (max-width: 991.98px) {
   .contact {
     padding: 300px 0 0;
