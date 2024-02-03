@@ -11673,11 +11673,6 @@ pre .code {
   padding-right: 10%;
 }
 
-.contacts {
-  display: flex;
-  align-items: end !important; 
-}
-
 @media (max-width: 991.98px) {
   .contact {
     padding: 300px 0 0;
