@@ -11380,7 +11380,7 @@ pre .code {
   -webkit-justify-content: space-between;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  max-width: 180px;
+  max-width: 110px;
 }
 
 .social-icons .social-link {
@@ -11612,7 +11612,8 @@ pre .code {
 }
 
 .about-section .about-card {
-  padding: 60px;
+  /* padding: 60px; */
+  padding: 5% 20%;
   border-right: 1px solid #dee2e6;
 }
 
