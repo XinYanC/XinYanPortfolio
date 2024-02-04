@@ -11162,6 +11162,11 @@ p {
   color: #F85C70;
 }
 
+.portfolio-padding {
+  padding-top: 3%;
+  padding-bottom: 6%;
+}
+
 .portfolio .filters {
   border-bottom: 2px solid #dee2e6;
   border-radius: 0;
@@ -11221,6 +11226,10 @@ p {
           backface-visibility: hidden;
 }
 
+.portfolio-item{
+  border: .5px solid #444;
+}
+
 .portfolio .portfolio-container .portfolio-item .content-holder {
   position: absolute;
   top: 50%;
@@ -11253,7 +11262,7 @@ p {
 }
 
 .portfolio .portfolio-container .portfolio-item .content-holder .title {
-  font-size: 22px;
+  font-size: 20px;
   font-weight: 600;
 }
 
@@ -11266,6 +11275,12 @@ p {
 .portfolio .portfolio-container .portfolio-item:hover .content-holder {
   opacity: 1;
   visibility: visible;
+}
+
+.portfolio{
+  display: grid !important;
+  grid-template-columns: auto auto !important;
+  gap: 6%;
 }
 
 /* blog wrapper */
@@ -11334,6 +11349,26 @@ p {
   top: 1px;
 }
 
+.open-web {
+  color: white;
+}
+
+.open-web:hover {
+  color: white;
+  font-weight: bold;
+}
+
+.ppl-link{
+  color: white;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.ppl-link:hover{
+  color: white;
+  font-weight: bold;
+}
+
 @media (max-width: 991.98px) {
   .blog-card {
     -webkit-box-orient: vertical;
@@ -11347,7 +11382,75 @@ p {
     max-width: 100%;
     min-width: 100%;
   }
+
+  .portfolio{
+    display: flex !important;
+    flex-direction: column !important;
+    /* width: 100%; */
+  }
 }
+
+#scroll {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 10%;
+}
+
+.scroll {
+	width: 60px;
+	height: 60px;
+	border: 2px solid #333;
+	border-radius: 50%;
+	position: relative;
+	animation: up 1.5s infinite;
+	-webkit-animation: up 1.5s infinite;
+	&::before {
+		content: '';
+		position: absolute;
+		/* top: 15px; */
+    top: 20px;
+		left: 18px;
+		width: 18px;
+		height: 18px;
+		border-left: 2px solid #333;
+  	border-bottom: 2px solid #333;
+		transform: rotate(135deg);
+	}
+}
+
+@keyframes up {
+	0% {
+		transform: translate(0);
+	}
+	20% {
+		transform: translateY(-15px);
+	}
+	40% {
+		transform: translate(0);
+	}
+}
+
+@-webkit-keyframes up {
+	0% {
+		transform: translate(0);
+	}
+	20% {
+		transform: translateY(-15px);
+	}
+	40% {
+		transform: translate(0);
+	}
+}
+
+.next-button-sec {
+  display: flex;
+  justify-content: center;
+  padding-top: 5%;
+}
+
+/* .next-button{
+  padding: 10%;
+} */
 
 .custom-map {
   height: 400px;
@@ -11682,6 +11785,12 @@ pre .code {
   .contact .contact-form-card,
   .contact .contact-info-card {
     min-height: auto !important;
+  }
+
+  .portfolio {
+    display: flex !important;
+    flex-direction: column !important;
+    width: 100%;
   }
 }
 
