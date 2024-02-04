@@ -11400,6 +11400,12 @@ p {
   padding-bottom: 10%;
 }
 
+#fixed-scroll{
+  position: fixed;
+  bottom: 5%;
+  right: 4%; 
+}
+
 .scroll {
 	width: 60px;
 	height: 60px;
@@ -11572,6 +11578,11 @@ pre .code {
 }
 
 .navbar .brand .brand-txt .brand-subtitle {
+  font-size: 13px;
+  color: #888;
+}
+
+.navbar .brand .brand-subtitle {
   font-size: 13px;
   color: #888;
 }
