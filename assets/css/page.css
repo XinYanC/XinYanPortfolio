@@ -11277,10 +11277,23 @@ p {
   visibility: visible;
 }
 
-.portfolio{
-  display: grid !important;
-  grid-template-columns: auto auto !important;
-  gap: 6%;
+.btn-outline-white {
+  color: white;
+  border-color: white;
+}
+
+.btn-outline-white i {
+  display: inline-block;
+  transition: transform 0.3s ease-out;
+}
+
+.btn-outline-white:hover {
+  color: white;
+  font-weight: bold;
+}
+
+.btn-outline-white:hover i {
+  transform: translateX(7px);
 }
 
 /* blog wrapper */
@@ -11347,15 +11360,6 @@ p {
 .blog-card .content-holder .read-more i {
   position: relative;
   top: 1px;
-}
-
-.open-web {
-  color: white;
-}
-
-.open-web:hover {
-  color: white;
-  font-weight: bold;
 }
 
 .ppl-link{
@@ -11442,15 +11446,34 @@ p {
 	}
 }
 
-.next-button-sec {
+.project-button-container{
   display: flex;
   justify-content: center;
   padding-top: 5%;
 }
 
-/* .next-button{
-  padding: 10%;
-} */
+.btn-outline-pro {
+  background-color: #F85C70;
+  border-color: #F85C70;
+  color: white;
+}
+
+.btn-outline-pro i {
+  display: inline-block;
+  transition: transform 0.3s ease-out;
+}
+
+.btn-outline-pro:hover {
+  color: white;
+  font-weight: bold;
+  background-color: #F85C70;
+  border-color: #F85C70;
+}
+
+.btn-outline-pro:hover i {
+  transform: translateX(7px);
+  color: white;
+}
 
 .custom-map {
   height: 400px;
