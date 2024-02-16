@@ -11432,6 +11432,11 @@ p {
   color: green;
 }
 
+.cut {
+  display: flex;
+  justify-content: space-between;
+}
+
 @keyframes up {
 	0% {
 		transform: translate(0);
